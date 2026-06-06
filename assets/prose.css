@@ -1,0 +1,242 @@
+/*
+  Minimal prose class for Tailwind Preflighted pages.
+  Restores what Preflight strips, adds a comfortable reading width,
+  and applies a clean typographic scale — nothing more.
+*/
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1c1917;
+
+  & h1 {
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0.8889em;
+    line-height: 1.1111;
+    font-weight: 400;
+  }
+  & h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333;
+    font-weight: 300;
+  }
+  & h3 {
+    font-size: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+    font-weight: 200;
+  }
+  & h4 {
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+    font-weight: 200;
+  }
+  & h5,
+  & h6 {
+    font-size: 0.875em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+    font-weight: 200;
+  }
+  & h6 {
+    color: #57534e;
+  }
+
+  & p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  & a {
+    color: #1d4ed8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+  }
+  & a:hover {
+    color: #1e40af;
+  }
+
+  & strong {
+    font-weight: 700;
+  }
+  & em {
+    font-style: italic;
+  }
+
+  & ul {
+    list-style-type: disc;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+  & ol {
+    list-style-type: decimal;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+  & li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  & ul ul,
+  & ul ol,
+  & ol ul,
+  & ol ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  & li::marker {
+    color: #a8a29e;
+  }
+
+  & blockquote {
+    font-style: italic;
+    color: #57534e;
+    border-left: 3px solid #d6d3d1;
+    padding-left: 1em;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+  }
+  & blockquote p:first-child {
+    margin-top: 0;
+  }
+  & blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  & code {
+    font-size: 0.875em;
+    font-weight: 600;
+    color: #111827;
+    background: #f5f5f4;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+  }
+  & pre code {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #e7e5e4;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  & pre {
+    font-size: 0.875em;
+    line-height: 1.7143;
+    background: #1c1917;
+    color: #e7e5e4;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    padding: 0.8571em 1.1429em;
+  }
+
+  & table {
+    width: 100%;
+    table-layout: auto;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 0.875em;
+    line-height: 1.7143;
+  }
+  & thead {
+    border-bottom: 2px solid #d6d3d1;
+  }
+  & thead th {
+    font-weight: 600;
+    color: #1c1917;
+    padding: 0.5714em 0.8571em;
+  }
+  & tbody tr {
+    border-bottom: 1px solid #e7e5e4;
+  }
+  & tbody td {
+    padding: 0.5714em 0.8571em;
+  }
+  & tfoot {
+    border-top: 2px solid #d6d3d1;
+  }
+
+  & hr {
+    border: none;
+    border-top: 1px solid #d6d3d1;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  & img {
+    border-radius: 6px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  & figure {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  & figure img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  & figcaption {
+    font-size: 0.875em;
+    line-height: 1.4286;
+    color: #78716c;
+    margin-top: 0.8571em;
+  }
+
+  & > h1:first-child,
+  & > h2:first-child,
+  & > h3:first-child,
+  & > h4:first-child,
+  & > h5:first-child,
+  & > h6:first-child {
+    margin-top: 0;
+  }
+
+  & dt {
+    font-weight: 600;
+    margin-top: 1.25em;
+  }
+  & dd {
+    margin-top: 0.25em;
+    margin-left: 1.625em;
+  }
+
+  & kbd {
+    font-size: 0.875em;
+    font-weight: 500;
+    font-family: inherit;
+    color: #1c1917;
+    background: #f5f5f4;
+    border: 1px solid #d6d3d1;
+    border-bottom: 2px solid #a8a29e;
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+  }
+
+  & mark {
+    background: #fde68a;
+    color: #1c1917;
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
+  }
+
+  & abbr {
+    text-decoration: underline dotted;
+    text-underline-offset: 2px;
+    cursor: help;
+  }
+}

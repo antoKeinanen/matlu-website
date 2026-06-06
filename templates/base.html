@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
+    <link href="/static/modern-normalize.css" rel="stylesheet" />
+    <link href="/static/prose.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/static/styles.css" rel="stylesheet" />
+
+    <title>{% block title %}{{title}} | Matlu ry{% endblock %}</title>
+  </head>
+  <body>
+    <div class="root_container">
+      <header class="header">
+        <div class="header__container">
+          <img
+            class="header__container__logo"
+            src="/static/matlu-optimized.png"
+          />
+
+          <ul class="header__container__links">
+            <li>Kumpulan Potentiaali</li>
+            <li>In english</li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul class="nav__container">
+            <li>Etusivu</li>
+            <li>Hallitus</li>
+            <li>Tapahtumat</li>
+            <li>Jäsenet</li>
+            <li>Edunvalvonta</li>
+            <li>Virat</li>
+            <li>Säännöt</li>
+            <li>Yhteysteidot</li>
+            <li>UKK</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main_content prose">
+        {% block content %}
+        <p>Error: no content</p>
+        {% endblock %}
+      </main>
+
+      <footer class="footer">
+        <div class="footer__sections">
+          <section class="footer__section">
+            <p class="footer__title">Dokumentteja</p>
+            <ul>
+              <li>Pöytäkirjat</li>
+              <li>Matlun tietosuojaseloste</li>
+              <li>Matlun turvallisen tilan periaatteet</li>
+              <li>Christina Reginan kulkuavainrekisterin tietosuojaseloste</li>
+              <li>Yhdenvertaisuussuunnitelma</li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <p class="footer__title">Matlu sosiaalisessa mediassa</p>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <p class="footer__title">Yhteistyössä</p>
+            <ul>
+              <li><img class="footer__sponsor" src="/static/sponsors/loimu.png" alt="loimu"/></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
