@@ -1,0 +1,6 @@
+name = "matlu-website"
+main = "build/index.js"
+compatibility_date = "2026-05-25"
+
+[build]
+command = "cargo install \"worker-build@^0.8\" && worker-build --release"

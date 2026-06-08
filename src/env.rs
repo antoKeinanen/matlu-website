@@ -1,23 +1,19 @@
 use std::env;
 use validator::Validate;
 
-#[derive(Debug, Validate)]
+#[derive(Debug, Validate, Clone)]
 pub struct Env {
-    #[validate(range(min = 1, max = 65535))]
-    pub port: u16,
+    #[validate(url)]
+    pub cdn_url: String,
 }
 
 impl Env {
     pub fn load() -> Self {
         dotenvy::dotenv().ok();
 
-        let port_str = env::var("PORT").unwrap_or_else(|_| "3000".to_string());
+        let cdn_url = env::var("CDN_URL").unwrap_or_else(|_| "http://localhost:8000".to_string());
 
-        let env = Env {
-            port: port_str
-                .parse::<u16>()
-                .expect("PORT must be valid number between 1-65535"),
-        };
+        let env = Env { cdn_url };
 
         if let Err(errors) = env.validate() {
             panic!("❌ Invalid environment variables:\n{errors}");
