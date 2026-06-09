@@ -1,3 +1,5 @@
+use std::env;
+
 use askama::Template;
 use axum::http::StatusCode;
 use axum::response::{Html, IntoResponse, Response};
@@ -12,6 +14,7 @@ struct ErrorTemplate {
     status_code: u16,
     title: String,
     message: String,
+    ctx: crate::pages::PageContext,
 }
 
 pub enum AppError {
@@ -52,6 +55,9 @@ impl IntoResponse for AppError {
             status_code: self.status_code().as_u16(),
             title: self.title().to_string(),
             message: self.message().to_string(),
+            ctx: super::PageContext {
+                cdn_url: env::var("CDN_URL").unwrap_or_else(|_| "http://localhost:8000".to_string()),
+            },
         };
 
         (self.status_code(), Html(template.render().unwrap())).into_response()
