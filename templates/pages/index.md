@@ -22,7 +22,7 @@ Matlu toimii myös Domus Gaudiumilla sijaitsevan Matlu-klusterin ylläpitäjäj�
 
 Matlun varsinaisia jäseniä ovat [järjestöt](/members), välillisiä puolestaan kaikki jäsenjärjestöihin liittyneet opiskelijat.
 
-Toimeenpaneva elin on hallitus, joka koostuu 8-18 jäsenjärjestöjen jäsenistä. Halituspaikkoja pyritään jakamaan mahdollisimman laajasti kaikkien tiedekunnan oppiaineiden opiskelijoille. Hallituksen lisäksi toimintaa tukevat myös virkailijat sekä jäsenjärjestöjen aktiivit. [Hallitus ja virkailijat](/board).
+Toimeenpaneva elin on hallitus, joka koostuu 8-18 jäsenjärjestöjen jäsenistä. Halituspaikkoja pyritään jakamaan mahdollisimman laajasti kaikkien tiedekunnan oppiaineiden opiskelijoille. Hallituksen lisäksi toimintaa tukevat myös virkailijat sekä jäsenjärjestöjen aktiivit. [Hallitus ja virkailijat](/officials).
 
 ## Miten Matlu toimii?
 

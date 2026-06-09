@@ -4,9 +4,9 @@ Tältä sivulta löydät vastaukset Matlua koskeviin useimmin kysyttyihin kysymy
 
 ## Mikä on Matlu?
 
-Matlu on vuonna 1994 perustettu Helsingin yliopiston matemaattis-luonnontieteellisen tiedekunnan opiskelijajärjestöjen edunvalvonta- ja yhteistyöjärjestö. Matlun ydintoimintaa on tiedekuntatason edunvalvonta. Aktiivinen yhteydenpito tiedekunnan henkilökuntaan, hallinnon opiskelijaedustajiin sekä ylioppilaskuntaan mahdollistavat nopean ja kattavan tiedonkulun. Viime vuosina tärkeäksi keskustelufoorumiksi on vakiintunut tiedekuntasauna, jossa henkilökunta ja ainejärjestöjen edustajat pääsevät keskustelemaan opintoasioista rennossa tunnelmassa. [Lisää edunvalvonnasta](https://matlu.fi/edunvalvonta/).
+Matlu on vuonna 1994 perustettu Helsingin yliopiston matemaattis-luonnontieteellisen tiedekunnan opiskelijajärjestöjen edunvalvonta- ja yhteistyöjärjestö. Matlun ydintoimintaa on tiedekuntatason edunvalvonta. Aktiivinen yhteydenpito tiedekunnan henkilökuntaan, hallinnon opiskelijaedustajiin sekä ylioppilaskuntaan mahdollistavat nopean ja kattavan tiedonkulun. Viime vuosina tärkeäksi keskustelufoorumiksi on vakiintunut tiedekuntasauna, jossa henkilökunta ja ainejärjestöjen edustajat pääsevät keskustelemaan opintoasioista rennossa tunnelmassa. [Lisää edunvalvonnasta](/interests).
 
-Matlun rooli yhteistyöjärjestönä näkyy lukuisissa oppiaine- ja tiedekuntarajat ylittävissä tapahtumissa. Vuosittaisiin tapahtumiin lukeutuu MEGAkulkuneuvo sekä useita bileitä ja sitsejä. Matlu toimii myös Domus Gaudiumilla sijaitsevan Matlu-klusterin ylläpitäjäjärjestönä. Kerhotilaa hallinnoi erillinen Leppätalokomitea. Katso [varauskalenteri](https://matlu.fi/varauskalenteri).
+Matlun rooli yhteistyöjärjestönä näkyy lukuisissa oppiaine- ja tiedekuntarajat ylittävissä tapahtumissa. Vuosittaisiin tapahtumiin lukeutuu MEGAkulkuneuvo sekä useita bileitä ja sitsejä. Matlu toimii myös Domus Gaudiumilla sijaitsevan Matlu-klusterin ylläpitäjäjärjestönä. Kerhotilaa hallinnoi erillinen Leppätalokomitea. Katso [varauskalenteri](/calendar).
 
 ## Keitä Matlussa on?
 
@@ -14,11 +14,11 @@ Matlun varsinaisia jäseniä ovat **järjestöt**, välillisiä puolestaan kaikk
 
 ## Mitä Matlu tekee?
 
-Matlun ydintoimintaa on tiedekuntatason **edunvalvonta**. Aktiivinen yhteydenpito tiedekunnan henkilökuntaan, hallinnon opiskelijaedustajiin sekä ylioppilaskuntaan mahdollistavat nopean ja kattavan tiedonkulun. Matlu järjestää myös useita **tapahtumia** sekä kotokumpulalaisten kesken, että tiedekuntarajat ylittäen. Matlu toimii myös Domus Gaudiumilla sijaitsevan Matlu-klusterin ylläpitäjäjärjestönä. Kerhotilaa hallinnoi erillinen Leppätalokomitea. Katso [varauskalenterin tilanne](https://matlu.fi/varauskalenteri).
+Matlun ydintoimintaa on tiedekuntatason **edunvalvonta**. Aktiivinen yhteydenpito tiedekunnan henkilökuntaan, hallinnon opiskelijaedustajiin sekä ylioppilaskuntaan mahdollistavat nopean ja kattavan tiedonkulun. Matlu järjestää myös useita **tapahtumia** sekä kotokumpulalaisten kesken, että tiedekuntarajat ylittäen. Matlu toimii myös Domus Gaudiumilla sijaitsevan Matlu-klusterin ylläpitäjäjärjestönä. Kerhotilaa hallinnoi erillinen Leppätalokomitea. Katso [varauskalenterin tilanne](/calendar).
 
 ## Mitä Matlussa voi tehdä?
 
-Matlussa voi tehdä ihan mitä vain. Olemassaolevia virkailija-kuvauksia voi lukea [täältä](https://matlu.fi/virkailijat), mutta näiden lisäksi uusia virkoja putkahtelee Matluun liki vuosittain. Virkailijaksi tulemiseen riittää ainoastaan oma mielenkiinto asiaa kohtaan!
+Matlussa voi tehdä ihan mitä vain. Olemassaolevia virkailija-kuvauksia voi lukea [täältä](/officials), mutta näiden lisäksi uusia virkoja putkahtelee Matluun liki vuosittain. Virkailijaksi tulemiseen riittää ainoastaan oma mielenkiinto asiaa kohtaan!
 
 ## Millaisia tapahtumia Matlu järjestää?
 
@@ -34,11 +34,11 @@ Matlulla on laajat resurssit koko Kumpulan väliseen yhteydenpitoon. Mikäli koh
 
 ## Miten Matluun saa helpoiten yhteyden?
 
-Helpoiten Matluun saa yhteyden sähköpostitse tai Facebookin yksityisviestin kautta. Matlun hallituslaisten ja virkailijoiden yhteystiedot löydät [täältä](https://matlu.fi/yhteystiedot).
+Helpoiten Matluun saa yhteyden sähköpostitse tai Facebookin yksityisviestin kautta. Matlun hallituslaisten ja virkailijoiden yhteystiedot löydät [täältä](/contact).
 
 ## Miten Matlun toimintaan pääsee mukaan?
 
-Matluun toimintaan pääsee helpoiten mukaan hakemalla Matlun **hallitukseen** tai virkailijaksi. Viran kautta pääset toteuttamaan virkaan liittyviä asioita parhaaksi näkemälläsi tavalla, hallituksen ja muiden virkailijoiden avustuksella. Ei kuitenkaan tarvitse sitoutua mihinkään, voidakseen olla osana Matlun laajaa toimintaa. Kuvaukset tämänhetkisiin virkoihin löydät [täältä](https://matlu.fi/virkailijat). Hallitus valitaan vuosittain sääntömääräisessä syyskokouksessa syksyn lopussa ja virkailijat taas vuoden alussa järjestäytymiskokouksessa.
+Matluun toimintaan pääsee helpoiten mukaan hakemalla Matlun **hallitukseen** tai virkailijaksi. Viran kautta pääset toteuttamaan virkaan liittyviä asioita parhaaksi näkemälläsi tavalla, hallituksen ja muiden virkailijoiden avustuksella. Ei kuitenkaan tarvitse sitoutua mihinkään, voidakseen olla osana Matlun laajaa toimintaa. Kuvaukset tämänhetkisiin virkoihin löydät [täältä](/officials). Hallitus valitaan vuosittain sääntömääräisessä syyskokouksessa syksyn lopussa ja virkailijat taas vuoden alussa järjestäytymiskokouksessa.
 
 Myös osallistumalla Matlun kuukausittaisiin hallituksen kokouksiin pääsee helposti kurkkimaan hallituksen toimintaa aitiopaikalta. Seuraa siis **sähköpostilistaamme** ainakin kokouskutsujen ja -yhteenvetojen osalta.
 
