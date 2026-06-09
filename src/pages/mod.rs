@@ -15,6 +15,7 @@ static_markdown!(members, "Jäsenet", "pages/members.md");
 static_markdown!(interests, "Edunvalvonta", "pages/interests.md");
 static_markdown!(officials, "Virat", "pages/officials.md");
 static_markdown!(rules, "Säännöt", "pages/rules.md");
+static_markdown!(faq, "UKK", "pages/faq.md");
 
 pub fn get_router() -> Router<AppState> {
     Router::new()
@@ -23,5 +24,6 @@ pub fn get_router() -> Router<AppState> {
         .route("/interests", get(interests))
         .route("/officials", get(officials))
         .route("/rules", get(rules))
+        .route("/faq", get(faq))
         .fallback(fallback)
 }
