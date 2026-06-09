@@ -17,6 +17,27 @@ static_markdown!(officials, "Virat", "pages/officials.md");
 static_markdown!(rules, "Säännöt", "pages/rules.md");
 static_markdown!(faq, "UKK", "pages/faq.md");
 
+static_markdown!(
+    matlu_privacy_policy,
+    "Matlun tietosuojaseloste",
+    "pages/documents/matlu-privacy-policy.md"
+);
+static_markdown!(
+    safer_space_guideline,
+    "Turvallisemman tilan periaatteet",
+    "pages/documents/safer-space-guideline.md"
+);
+static_markdown!(
+    equality_plan,
+    "Yhdenvertaisuussuunnitelma",
+    "pages/documents/equality-plan.md"
+);
+static_markdown!(
+    privacy_policy,
+    "Tietosuojapolitiikka",
+    "pages/documents/privacy-policy.md"
+);
+
 pub fn get_router() -> Router<AppState> {
     Router::new()
         .route("/", get(index))
@@ -25,5 +46,9 @@ pub fn get_router() -> Router<AppState> {
         .route("/officials", get(officials))
         .route("/rules", get(rules))
         .route("/faq", get(faq))
+        .route("/documents/matlu-privacy-policy", get(matlu_privacy_policy))
+        .route("/documents/safer-space-guideline", get(safer_space_guideline))
+        .route("/documents/equality-plan", get(equality_plan))
+        .route("/documents/privacy-policy", get(privacy_policy))
         .fallback(fallback)
 }
