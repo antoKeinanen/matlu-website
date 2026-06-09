@@ -6,15 +6,15 @@
 
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
 
-    <link href="{{env.cdn_url}}/modern-normalize.css" rel="stylesheet" />
-    <link href="{{env.cdn_url}}/prose.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/modern-normalize.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/prose.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link href="{{env.cdn_url}}/styles.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/styles.css" rel="stylesheet" />
 
     <title>{% block title %}{{title}} | Matlu ry{% endblock %}</title>
   </head>
@@ -24,7 +24,7 @@
         <div class="header__container">
           <img
             class="header__container__logo"
-            src="{{env.cdn_url}}/matlu-optimized.png"
+            src="{{ctx.cdn_url}}/matlu-optimized.png"
           />
 
           <ul class="header__container__links">
@@ -76,7 +76,7 @@
           <section class="footer__section">
             <p class="footer__title">Yhteistyössä</p>
             <ul>
-              <li><img class="footer__sponsor" src="{{env.cdn_url}}/sponsors/loimu.png" alt="loimu"/></li>
+              <li><img class="footer__sponsor" src="{{ctx.cdn_url}}/sponsors/loimu.png" alt="loimu"/></li>
             </ul>
           </section>
         </div>

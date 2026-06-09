@@ -1,5 +1,7 @@
 use askama::Template;
 
+use crate::pages::PageContext;
+
 #[macro_export]
 macro_rules! static_html {
     ($name:ident, $title:literal, $path:literal) => {
@@ -8,7 +10,7 @@ macro_rules! static_html {
             #[template(path = $path)]
             struct [< $name:camel >] {
                 title: &'static str,
-                env: $crate::env::Env,
+                ctx: $crate::pages::PageContext,
             }
 
             async fn [< $name:snake >](
@@ -18,7 +20,9 @@ macro_rules! static_html {
                     <[< $name:camel >] as ::askama::Template>::render(
                         &[< $name:camel >] {
                             title: $title,
-                            env: state.env,
+                            ctx: $crate::pages::PageContext {
+                                cdn_url: state.env.cdn_url,
+                            }
                         }
                     ).unwrap()
                 )
@@ -41,10 +45,10 @@ pub fn markdown_to_html(md: &str) -> String {
 
 #[derive(Template)]
 #[template(path = "static_markdown.html")]
-pub struct MarkdownTemplate {
+pub struct MarkdownHtmlTemplate {
     pub title: &'static str,
     pub content: String,
-    pub env: crate::env::Env,
+    pub ctx: PageContext,
 }
 
 #[macro_export]
@@ -52,18 +56,35 @@ macro_rules! static_markdown {
     ($name:ident, $title:literal, $path:literal) => {
         ::pastey::paste! {
 
+            #[derive(::askama::Template)]
+            #[template(path = $path)]
+            pub struct [< $name:camel >] {
+                pub content: String,
+                pub ctx: PageContext,
+            }
+
             async fn [< $name:snake >](
                 ::axum::extract::State(state): ::axum::extract::State<$crate::AppState>,
             ) -> ::axum::response::Html<String> {
 
+                let ctx = $crate::pages::PageContext {
+                    cdn_url: state.env.cdn_url
+                };
+
                 let md: &'static str = include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/templates/" ,$path));
-                let content = $crate::pages::static_page::markdown_to_html(md);
+                let md = <[< $name:camel >] as ::askama::Template>::render(
+                    &[< $name:camel >]{
+                        content: md.to_string(),
+                        ctx: ctx.clone(),
+                }).unwrap();
+
+                let content = $crate::pages::static_page::markdown_to_html(&md);
                 ::axum::response::Html(
-                    <$crate::pages::static_page::MarkdownTemplate as ::askama::Template>::render(
-                        &$crate::pages::static_page::MarkdownTemplate{
+                    <$crate::pages::static_page::MarkdownHtmlTemplate as ::askama::Template>::render(
+                        &$crate::pages::static_page::MarkdownHtmlTemplate{
                             title: $title,
                             content,
-                            env: state.env,
+                            ctx: ctx.clone()
                         }
                     ).unwrap()
                 )
