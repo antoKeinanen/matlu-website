@@ -13,11 +13,13 @@ pub struct PageContext {
 static_markdown!(index, "Etusivu", "pages/index.md");
 static_markdown!(members, "Jäsenet", "pages/members.md");
 static_markdown!(interests, "Edunvalvonta", "pages/interests.md");
+static_markdown!(officials, "Virat", "pages/officials.md");
 
 pub fn get_router() -> Router<AppState> {
     Router::new()
         .route("/", get(index))
         .route("/members", get(members))
         .route("/interests", get(interests))
+        .route("/officials", get(officials))
         .fallback(fallback)
 }
