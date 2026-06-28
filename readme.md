@@ -5,6 +5,7 @@
 We have developed the project on nixos so the integration with it is pretty extensive. If you have nix installed you can use the following commands:
 ```bash
 nix develop
+wrangler d1 execute matlu-dev-db --local --file=./schema.sql # first time only
 start-dev-cdn
 start-dev-server
 ```
@@ -22,6 +23,11 @@ Once you have rust, cargo and wrangler installed you can install simple-http-ser
 
 ```bash
 cargo install simple-http-server cargo-watch
+```
+
+Initialize the database
+```bash
+wrangler d1 execute matlu-dev-db --local --file=./schema.sql # first time only
 ```
 
 Then you can start the development CDN on the port `8000` with:

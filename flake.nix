@@ -21,6 +21,7 @@
           lld
           cargo-watch
           simple-http-server
+          rust-analyzer
 
           (pkgs.writeShellApplication {
             name = "start-dev-cdn";

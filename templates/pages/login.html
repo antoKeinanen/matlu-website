@@ -1,0 +1,16 @@
+{% extends "../base.html" %}
+
+<!---->
+
+{% block content %}
+<h1>Järjestöjen sisäänkirjautuminen</h1>
+<form action="/login" method="post">
+  <label for="username">Käyttäjätunnus</label>
+  <input type="text" name="username" required>
+  <br>
+  <label for="password"></label>
+  <input type="password" name="password" required>
+  <br>
+  <input type="submit" value="Kirjaudu">
+</form>
+{% endblock %}

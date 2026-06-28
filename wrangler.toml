@@ -4,3 +4,9 @@ compatibility_date = "2026-05-25"
 
 [build]
 command = "cargo install \"worker-build@^0.8\" && worker-build --release"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "matlu-dev-db"
+database_id = "c020574a-5623-407b-be0c-cd192bab9545"
+
