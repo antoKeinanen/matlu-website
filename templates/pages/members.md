@@ -1,0 +1,15 @@
+|                                                            | Nimi                                                                        | Ala                                                       |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- |
+| ![HYK]({{ctx.cdn_url}}/members/hyk-100.webp)               | [Helsingin yliopiston kemistit ry (HYK)](https://hyk.fi)                    | kemia                                                     |
+| ![Integralis]({{ctx.cdn_url}}/members/integralis-100.webp) | [Integralis ry ](https://www.integralis.fi)                                 | Bachelor's Programme in Science                           |
+| ![Limes]({{ctx.cdn_url}}/members/limes-100.webp)           | [Limes ry ](https://limes.fi)                                               | kaikki Kumpulan aineet                                    |
+| ![MaO]({{ctx.cdn_url}}/members/mao-100.webp)               | [Maantieteen opiskelijat ry (MaO) ](https://www.maantieteenopiskelijat.fi/) | maantiede                                                 |
+| ![Matrix]({{ctx.cdn_url}}/members/matrix-100.webp)         | [Matrix ry ](https://matrix-ry.fi)                                          | matematiikka                                              |
+| ![Meridiaani]({{ctx.cdn_url}}/members/meridiaani-100.webp) | [Meridiaani ry ](https://meridiaani.org)                                    | tähtitiede                                                |
+| ![Mesta]({{ctx.cdn_url}}/members/mesta-100.webp)           | [Mesta ry ](https://linktr.ee/mestary)                                      | Urban Studies and Planning                                |
+| ![Moodi]({{ctx.cdn_url}}/members/moodi-100.webp)           | [Moodi ry ](https://blogs.helsinki.fi/moodi-ry/)                            | tilastotiede                                              |
+| ![Resonanssi]({{ctx.cdn_url}}/members/resonanssi-100.webp) | [Resonanssi ry ](https://blogs.helsinki.fi/resonanssi/)                     | fysikaaliset tieteet                                      |
+| ![Spektrum]({{ctx.cdn_url}}/members/spektrum-100.webp)     | [Spektrum ry ](https://spektrum.fi/)                                        | svenskspråkiga i matematik, fysik, kemi och datavetenskap |
+| ![Synop]({{ctx.cdn_url}}/members/synop-100.webp)           | [Synop ry ](https://blogs.helsinki.fi/synop-ry/)                            | meteorologia                                              |
+| ![TKO-äly]({{ctx.cdn_url}}/members/tko-aly-100.webp)       | [TKO-äly ry ](https://tko-aly.fi)                                           | tietojenkäsittelytiede                                    |
+| ![Vasara]({{ctx.cdn_url}}/members/vasara-100.webp)         | [Vasara ry ](https://blogs.helsinki.fi/vasara-ry/)                          | tietojenkäsittelytiede                                    |
