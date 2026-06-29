@@ -56,7 +56,8 @@ impl IntoResponse for AppError {
             title: self.title().to_string(),
             message: self.message().to_string(),
             ctx: super::PageContext {
-                cdn_url: env::var("CDN_URL").unwrap_or_else(|_| "http://localhost:8000".to_string()),
+                cdn_url: env::var("CDN_URL")
+                    .unwrap_or_else(|_| "http://localhost:8000".to_string()),
             },
         };
 

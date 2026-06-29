@@ -1,11 +1,14 @@
-mod error;
 mod auth;
+mod error;
 mod static_page;
 
-use axum::{Router, routing::get};
+use axum::{
+    Router,
+    routing::{get, post},
+};
 
-use crate::{AppState, pages::error::fallback, static_markdown, static_html};
-
+use crate::{AppState, pages::error::fallback, static_html, static_markdown};
+use auth::{AuthError, Claims, login};
 
 #[derive(Debug, Clone)]
 pub struct PageContext {
@@ -40,8 +43,14 @@ static_markdown!(
     "pages/documents/privacy-policy.md"
 );
 
-
 static_html!(login_form, "Sisäänkirjautuminen", "pages/login.html");
+
+async fn protected(claims: Claims) -> Result<String, AuthError> {
+    // Send the protected data to the user
+    Ok(format!(
+        "Welcome to the protected area :)\nYour data:\n{claims}",
+    ))
+}
 
 pub fn get_router() -> Router<AppState> {
     Router::new()
@@ -52,9 +61,14 @@ pub fn get_router() -> Router<AppState> {
         .route("/rules", get(rules))
         .route("/faq", get(faq))
         .route("/documents/matlu-privacy-policy", get(matlu_privacy_policy))
-        .route("/documents/safer-space-guideline", get(safer_space_guideline))
+        .route(
+            "/documents/safer-space-guideline",
+            get(safer_space_guideline),
+        )
         .route("/documents/equality-plan", get(equality_plan))
         .route("/documents/privacy-policy", get(privacy_policy))
         .route("/login", get(login_form))
+        .route("/login", post(login))
+        .route("/protected", get(protected))
         .fallback(fallback)
 }
