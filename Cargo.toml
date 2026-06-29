@@ -20,6 +20,7 @@ tokio = { version = "1.52.3", features = ["macros"] }
 tower-service = "0.3.3"
 validator = { version = "0.20.0", features = ["derive"] }
 serde = "1.0.228"
+pulldown-cmark = "0.13.4"
 
 [general]
 dirs = ["templates/**"]

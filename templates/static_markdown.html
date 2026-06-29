@@ -3,7 +3,5 @@
 <!---->
 
 {% block content %}
-<h1>{{ status_code }}</h1>
-<h2>{{ title }}</h2>
-<p>{{ message }}</p>
+{{ content|safe }}
 {% endblock %}

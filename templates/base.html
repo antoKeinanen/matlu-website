@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ctx.cdn_url}}/favicon.ico" />
 
-    <link href="{{env.cdn_url}}/modern-normalize.css" rel="stylesheet" />
-    <link href="{{env.cdn_url}}/prose.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/modern-normalize.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/prose.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link href="{{env.cdn_url}}/styles.css" rel="stylesheet" />
+    <link href="{{ctx.cdn_url}}/styles.css" rel="stylesheet" />
 
     <title>{% block title %}{{title}} | Matlu ry{% endblock %}</title>
   </head>
@@ -22,27 +22,29 @@
     <div class="root_container">
       <header class="header">
         <div class="header__container">
-          <img
+          <a href="/">
+            <img
             class="header__container__logo"
-            src="{{env.cdn_url}}/matlu-optimized.png"
-          />
+            src="{{ctx.cdn_url}}/matlu-optimized.png"
+            />
+          </a>
 
           <ul class="header__container__links">
-            <li>Kumpulan Potentiaali</li>
-            <li>In english</li>
+            <li><a href="https://www.potentiaali.com/">Kumpulan Potentiaali</a></li>
+            <li><a href="/en">In english</a></li>
           </ul>
         </div>
         <nav class="nav">
           <ul class="nav__container">
-            <li>Etusivu</li>
-            <li>Hallitus</li>
-            <li>Tapahtumat</li>
-            <li>Jäsenet</li>
-            <li>Edunvalvonta</li>
-            <li>Virat</li>
-            <li>Säännöt</li>
-            <li>Yhteysteidot</li>
-            <li>UKK</li>
+            <li><a href="/">Etusivu</a></li>
+            <li><a href="/board">Hallitus</a></li>
+            <li><a href="/calendar">Tapahtumat</a></li>
+            <li><a href="/members">Jäsenet</a></li>
+            <li><a href="/interests">Edunvalvonta</a></li>
+            <li><a href="/officials">Virat</a></li>
+            <li><a href="/rules">Säännöt</a></li>
+            <li><a href="/contact">Yhteysteidot</a></li>
+            <li><a href="/faq">UKK</a></li>
           </ul>
         </nav>
       </header>
@@ -58,25 +60,29 @@
           <section class="footer__section">
             <p class="footer__title">Dokumentteja</p>
             <ul>
-              <li>Pöytäkirjat</li>
-              <li>Matlun tietosuojaseloste</li>
-              <li>Matlun turvallisen tilan periaatteet</li>
-              <li>Christina Reginan kulkuavainrekisterin tietosuojaseloste</li>
-              <li>Yhdenvertaisuussuunnitelma</li>
+              <li><a href="https://drive.google.com/drive/folders/1U1VwouP1PDeHaKRWgzN_K_g3Ge-o9Y2o"> Pöytäkirjat</a> </li>
+              <li><a href="/legal/matlu-privacy-policy">Matlun tietosuojaseloste</a></li>
+              <li><a href="/legal/safer-space-guideline">Matlun turvallisen tilan periaatteet</a></li>
+              <li><a href="/legal/equality-plan">Yhdenvertaisuussuunnitelma</a></li>
+              <li><a href="/legal/privacy-policy">Tietosuojapolitiikka</a></li>
             </ul>
           </section>
           <section class="footer__section">
             <p class="footer__title">Matlu sosiaalisessa mediassa</p>
             <ul>
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Telegram</li>
+              <li><a href="https://www.facebook.com/Matlury/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/matlury/">Instagram</a></li>
+              <li><a href="https://t.me/matluInfo">Telegram</a></li>
             </ul>
           </section>
           <section class="footer__section">
             <p class="footer__title">Yhteistyössä</p>
             <ul>
-              <li><img class="footer__sponsor" src="{{env.cdn_url}}/sponsors/loimu.png" alt="loimu"/></li>
+              <li>
+                <a href="https://loimu.fi">
+                  <img class="footer__sponsor" src="{{ctx.cdn_url}}/sponsors/loimu.png" alt="loimu"/>
+                </a>
+              </li>
             </ul>
           </section>
         </div>
